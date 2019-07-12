@@ -1,39 +1,58 @@
+/* Create flex for posts */
+#a,#b{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style and position the blog posts */
 .post {
     position: relative;
     width: 90%;
     height: 20%;
-    background: #fff;
+    flex: 1;
+    background: white;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
-    margin: 10px 10px 10px 20px;
+    margin: 20px 50px 20px 50px;
     float:left;
     border-radius: 15px;
 }
     
-.post-left {
+/* Style the blog author name */
+.left {
         width: 15%;            
         max-width: 15%;
         display: table-cell;
         vertical-align: middle;
         text-align: center;
         font-weight: bold;
-        color: #000;
+        color: black;
 }
+
+/* Style the blog post main content */
 .post-content {
         width: 75%;           
         display: table-cell;
         text-align: left;
-        background-color: #E8E8E8;
-        color: #000000;
+        background-color: rgb(180, 176, 176);
+        color: black;
+        margin-top: 5px;
         border-radius: 0 15px 15px 0;
-        padding: 0 20px;      
+        padding: 0 20px 20px 20px;      
 }
+
+/* Style the main heading of the blog post */
 .post-title{
     font-family: 'Itim', cursive;
     font-weight: bold;
-    color: #2b312b;
+    color: black;
     font-size: 25px;
     height: 25px;
-    }
+    padding-bottom: 20px;
+    margin-bottom: 7px;
+}
+
+/* Style the Bin and ellipsis button on the blog post */
 .post-more {
     float: right;
     cursor: pointer;
@@ -43,11 +62,22 @@
     padding-bottom: 10px;
     font-size: 30px;
 }
+
+/* Styles the blog post main content */
 .post-desc{
     height: 100px;
     margin-bottom: 0 !important;
+    text-overflow: none;
+    overflow: hidden;
+    word-wrap: break-word;
 }
 
+/* Stles the last blog post on the blog list */
+#last{
+    flex: 0.46;
+}
+
+/* Styles the Bloglist page body */
 body {
     height: 100%;
     width: 100%;
@@ -57,8 +87,59 @@ body {
     background-color: orange;
     background-size: 2000% 2000%;
 }
+
+/* Styles the Blog post container */
 .allPostsContainer {
     height: 100%;
     width: 100%;
+}
 
+/* Style for the Modals on the page header */
+/* Style for the input fields in the modals */
+.fill{
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: rgb(209, 197, 197);
+    display: block;
+    width:98%;
+    height:44px;
+ }
+ 
+/* Style for the modal button holder */
+ .postButtons {
+    width:300px;
+    height:200px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-100px 0 0 -150px;
+ }
+ 
+ 
+/* Main Header Modal Content */
+.modal-content {
+    position: relative;
+    top: -34px;
+    color: black;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid gray;
+    width: 44%;
+}
+  
+/* The Close Button on Modals */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
