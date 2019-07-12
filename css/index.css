@@ -1,0 +1,96 @@
+body{
+   background: url('background.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   margin: 0 !important;
+   background-size: 100% cover!important;
+   overflow:hidden;
+   display: block;
+} 
+
+/* Set a style for the rest of the elements besides the header elements on the index.html page */
+/* ####################################################################################################################################################################### */
+/* Styles the main heading buttons container on the right for sign in and sign up modals */
+.postButtons {
+   width:300px;
+   height:200px;
+   position:absolute;
+   left:50%;
+   top:55%;
+   margin:-100px 0 0 -150px;
+}
+
+/* Style the main body button */
+input.mainButtons {
+   width: 100px;
+   padding: 10px;
+   font-weight: 500;
+   font-size: 90%;
+   font-weight: 500;
+   background: rgba(196, 183, 11, 0.815);
+   color: black;    
+   border: none;           
+   margin: 10px 10px 0px 0px;
+   cursor: pointer;
+}
+
+button.mainButtons {
+   width: 100px;
+   padding: 10px;
+   cursor: pointer;
+   font-weight: 500;
+   font-size: 90%;
+   font-weight: 500;
+   background: rgba(196, 183, 11, 0.815);
+   color:black;  
+   opacity: 1;             
+   margin: 10px 10px 0px 0px;
+}
+
+/* Style the link on the main body */
+button.mainButtons a{
+   text-decoration: none;
+   color: black;
+   font-weight: 500;
+
+}
+
+/* styles the input fields in the modals */
+.fill{
+   border: none;
+   outline: none;
+   padding: 10px;
+   background-color:rgb(202, 194, 194);
+   display: block;
+   width:98%;
+   height:44px;
+}
+
+/* Style The Modal Content */
+  .modal-content 
+  {
+   position: relative;
+   top: -34px;
+   background-color:white;
+   margin: auto;
+   padding: 20px;
+   border: 1px solid gray;
+   width: 44%;
+ }
+ 
+ /* The Close button on the modal*/
+ .close {
+   color: grey;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}

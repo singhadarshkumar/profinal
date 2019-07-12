@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!-- CSS file for header-->
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+
+    <!-- CSS file for rest of the elements -->
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+
+    <!-- CSS for fonts -->
+    <link href='css\font.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div id="main-container-div">
+        <!-- Main header starts here -->
+        <div class="header">
+
+            <input id="signUp" class="topButtons" type="button" value="Sign Up">
+            <input id="signIn" class="topButtons" type="button" value="Sign In">
+            <p id="pageTitle" class="title">ScriBBler</p>
+            <p class="text">Explore. Imagine. Create</p>
+
+        </div>
+
+        <div class="postButtons">
+            <!-- Sign In and Sign Up Modals -->
+            <button class="mainButtons"><a href="html/bloglist.html">All Posts</a></button>
+            <input class="mainButtons" type="button" value="Create Post">
+            <!-- Main header ends here -->
+        </div>
+    </div>
+
+    <!-- Sign In Modal Content -->
+    <div class="modal" id="in">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="close1" class="close">&times;</span>
+            <h2>
+                <center>Welcome Back!</center>
+            </h2>
+            <hr />
+            <form>
+                <h4>Username</h4>
+                <input class="fill" type="text" name="fname" placeholder="Enter Username" required>
+                <h4>Password</h4>
+                <input class="fill" type="password" name="pass" placeholder="Enter Password" required>
+                <button>Sign In</button>
+                <div>
+                    <center>
+                        <h4>Not a member?<span style="color:slateblue; cursor: pointer;" onclick="newUser()">Sign Up</span></h4>
+                    </center>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Sign Up Modal Content -->
+    <div class="modal" id="up" >
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span id="close2" class="close">&times;</span>
+            <h2>
+                <center>Get Started</center>
+            </h2>
+            <hr />
+            <form>
+                <h4>Full Name</h4>
+                <input class="fill" type="text" name="fname" placeholder="Enter Full Name" required>
+                <h4>Username</h4>
+                <input class="fill" type="text" name="fname" placeholder="Enter Username" required>
+                <h4>Password</h4>
+                <input class="fill" type="password" name="pass" placeholder="Enter Password" required>
+                <h4>Confirm Password</h4>
+                <input class="fill" type="password" name="confPass" placeholder="Confirm Password" required>
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div>
+
+        <!-- Code for Create Post modal -->
+
+    </div>
+
+    <!-- Javascript for header in this file -->
+    <script src="js\header.js"></script>
+    <!-- Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+
+</html>
