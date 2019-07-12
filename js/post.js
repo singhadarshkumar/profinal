@@ -1,10 +1,6 @@
 // Makes the Save Button invisible by default
 var btn = document.getElementById('save');
 btn.style.display = "none";
-
-/*  editContent() makes the blogs main content and heading
-    editable to the user and outlines the editable portion
- */
 function editContent(){
     // Makes the edit button invisible
     var edit_btn = document.getElementById('edit');
@@ -22,11 +18,6 @@ function editContent(){
     para.setAttribute('contenteditable','true')
 
 }
-
-/*  saveContent() makes the blogs main content and heading
-    un-editable to the user, saves the changes
-    and remmoves the outlines of editable portion
- */
 function saveContent(){
     // Makes the save button invisible
     var edit_btn = document.getElementById('save');
@@ -64,13 +55,13 @@ function like(){
 */
 function comment(){
     // Fetch the new comment value
-    var cmnt = document.getElementById('addComment').value;
+    var cmnt = document.getElementById('Comment').value;
     var holder= `<p class="newComment">${cmnt}</p>` // New coment template
     // Fetch the comment holder div
     var allComment = document.getElementById("newCommentHolder");
     // Add the new comment to the comment holder
     allComment.innerHTML = holder + allComment.innerHTML;
     // Reset the value of the comment holder
-    document.getElementById('addComment').value = "";
+    document.getElementById('Comment').value = "";
     
 }

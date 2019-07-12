@@ -12,16 +12,13 @@
     font-family: 'Niconne', cursive;
     font-size: 30px;
 }
-.blogContent{
-
-}
-
-/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+/* ##################################################################################################################################################################### */
+/* Setting style */
 .fill{
     border: none;
     outline: none;
     padding: 10px;
-    background-color: #f1f1f1;
+    background-color: rgb(160, 156, 156);
     display: block;
     width:98%;
     height:44px;
@@ -42,23 +39,23 @@
     position: relative;
     top: -34px;
     color: black;
-    background-color: #fefefe;
+    background-color: white;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid gray;
     width: 44%;
 }
   
 /* The Close Button on modals */
 .close {
-    color: #aaaaaa;
+    color: gray;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 .close:hover,
 .close:focus {
-    color: #000;
+    color: rgb(172, 163, 163);
     text-decoration: none;
     cursor: pointer;
 }
@@ -111,16 +108,16 @@
 }
 
 /* Styles for the textarea to add new comment */
-#addComment{
+#Comment{
     display: block;
-    width: 75%;    
+    width: 700px;    
 }
 
 /* Styles for the comment holder section */
 #newCommentHolder{
     width: 100%;
     height: auto;
-    background-color: #b9b3b3;
+    background-color: rgb(133, 124, 124);
     padding: 10px;
 }
 
